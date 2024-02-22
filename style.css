@@ -1,3 +1,7 @@
+.nav-item {
+ padding-left: 20px;
+}
+
 body {
     font-family: 'Poppins';
     background: black; /* Cor de fundo desejada */
@@ -54,4 +58,19 @@ footer {
 
 footer p {
     color: black;
+}
+.produtosTitulo {
+    margin-bottom: 1em;
+}
+
+.cachaça-produto {
+    display: block;
+    margin: auto;
+    padding-bottom: 2em;
+}
+
+.doce-produto {
+    display: block;
+    margin: auto;
+    padding-bottom: 1em;
 }
