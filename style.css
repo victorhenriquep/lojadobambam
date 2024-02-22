@@ -1,0 +1,57 @@
+body {
+    font-family: 'Poppins';
+    background: black; /* Cor de fundo desejada */
+    margin: 0;
+    padding: 0;
+}
+
+.titulo h1 {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+.subtitulo h2 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Poppins';
+}
+
+.corpo {
+    background-color: black;
+}
+
+.titulo {
+    padding-top: 1em;
+}
+
+.subtitulo {
+    padding-bottom: 2em;
+}
+
+.smaller-image {
+    max-width: 70%; /* Defina a largura desejada */
+    height: auto; /* Isso garantirá que a proporção da imagem seja mantida */
+    margin: 0 auto; /* Isso centralizará a imagem dentro do carrossel */
+  }
+
+.container1 {
+    background-color: black;
+}
+
+#carouselExampleCaptions {
+    padding-bottom: 3em;
+}
+
+footer {
+    text-align: center;
+    background-color: white;
+    padding: 0.5em 0.5em 0 0;
+}
+
+footer p {
+    color: black;
+}
