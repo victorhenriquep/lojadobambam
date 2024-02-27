@@ -2,6 +2,10 @@
  padding-left: 20px;
 }
 
+.nav-item:hover {
+    text-decoration: underline;
+}
+
 body {
     font-family: 'Poppins';
     background: black; /* Cor de fundo desejada */
@@ -27,10 +31,23 @@ body {
 .corpo {
     background-color: black;
     padding-bottom: 2em;
+    text-align: center;
+}
+
+.corpo img {
+    transition: transform 0.3s ease; /* Adiciona transição suave */
+}
+
+.cachaça-produto:hover {
+    transform: scale(1.05);
+}
+
+.doce-produto:hover {
+    transform: scale(1.05);
 }
 
 .titulo {
-    padding-top: 1em;
+    padding-top: 2em;
 }
 
 .subtitulo {
@@ -54,7 +71,7 @@ body {
 footer {
     text-align: center;
     background-color: white;
-    padding-top: 0.5em;
+    margin: auto;
 }
 
 footer p {
