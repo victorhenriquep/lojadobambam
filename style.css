@@ -12,7 +12,7 @@ body {
 .titulo h1 {
     color: white;
     text-align: center;
-    font-size: 35px;
+    font-size: 45px;
     font-family: 'Poppins';
     font-weight: bold;
 }
@@ -26,6 +26,7 @@ body {
 
 .corpo {
     background-color: black;
+    padding-bottom: 2em;
 }
 
 .titulo {
@@ -53,7 +54,7 @@ body {
 footer {
     text-align: center;
     background-color: white;
-    padding: 0.5em 0.5em 0 0;
+    padding-top: 0.5em;
 }
 
 footer p {
@@ -64,13 +65,24 @@ footer p {
 }
 
 .cachaça-produto {
+
     display: block;
     margin: auto;
     padding-bottom: 2em;
 }
+
 
 .doce-produto {
     display: block;
     margin: auto;
     padding-bottom: 1em;
 }
+
+.card {
+
+    margin: auto;
+    margin-top: 50px;
+}
+
+
+
