@@ -21,6 +21,17 @@ body {
     font-weight: bold;
 }
 
+.subtitulo {
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Poppins';
+}
+
+.subtitulo a {
+    color: white;
+}
+
 .subtitulo h2 {
     color: white;
     text-align: center;
@@ -32,18 +43,20 @@ body {
     background-color: black;
     padding-bottom: 2em;
     text-align: center;
+    height: 90vh;
+    overflow: auto;
 }
 
 .corpo img {
-    transition: transform 0.3s ease; /* Adiciona transição suave */
+    transition: transform 0.2s ease; /* Adiciona transição suave */
 }
 
 .cachaça-produto:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .doce-produto:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .titulo {
@@ -60,6 +73,8 @@ body {
     margin: 0 auto; /* Isso centralizará a imagem dentro do carrossel */
   }
 
+
+
 .container1 {
     background-color: black;
 }
@@ -70,19 +85,27 @@ body {
 
 footer {
     text-align: center;
-    background-color: white;
-    margin: auto;
+    background-color: gainsboro;
+    /*margin: auto;*/
+    padding: 0;
 }
 
 footer p {
     color: black;
+    padding: 0;
+    margin-bottom: 0;
+    font-size: small;
 }
+
+footer p:last-child {
+    margin-top: 0;
+}
+    
 .produtosTitulo {
     margin-bottom: 1em;
 }
 
 .cachaça-produto {
-
     display: block;
     margin: auto;
     padding-bottom: 2em;
@@ -96,9 +119,9 @@ footer p {
 }
 
 .card {
-
     margin: auto;
     margin-top: 50px;
+    margin-bottom: 80px;
 }
 
 
