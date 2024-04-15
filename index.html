@@ -10,6 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="javascript.js"></script>
 </head>
 
 <body>
@@ -28,6 +31,9 @@
                 <a class="nav-link" href="produtos.html">Produtos</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#">Serviços</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#">Quem Somos</a>
               </li>
               <li class="nav-item">
@@ -43,7 +49,7 @@
         <h1>Armazém do Bambam</h1>
     </div>
     <div class="subtitulo">
-      <h2>Sabores de Minas Gerais <img src="img/mg-icon.png" width="35px"></h2>
+      <h2>Sabores de Minas Gerais<img class="icone-mg" src="img/mg-icon.png" width="35px"></h2>
       
     </div>
 
@@ -56,19 +62,20 @@
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <!--<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>-->
   </div>
-  <div class="carousel-inner">
-    <a href="cachaca.html"><div class="carousel-item active">
+  <div class="carousel-inner carousel-border">
+    <a href="cachaca.html" id="link-cachaca" data-bs-toggle="modal" data-bs-target="#modal-confirmacao-idade"><div class="carousel-item active">
       <img src="img/cachaça-index.png" class="d-block w-100 smaller-image" alt="Várias garrafas de cachaça mineira">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Cachaça Mineira</h5>
-        <p>Adicionar texto</p>
+      <div class="carousel-caption mt-4 texto-carrossel">
+        <h5 class="titulo-carrossel">Cachaça Mineira</h5>
+        <p class="subtitulo-carrossel">Conheça nossas opções de cachaças</p>
       </div></a>
     </div>
+
     <a href="doce.html"><div class="carousel-item">
       <img src="img/doce-index.png" class="d-block w-100 smaller-image" alt="Doce de leite no pote">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Doces Mineiros</h5>
-        <p>Adicionar Textos</p>
+      <div class="carousel-caption mt-4 texto-carrossel">
+        <h5 class="titulo-carrossel">Doces Mineiros</h5>
+        <p class="subtitulo-carrossel">Conheça nossas opções de doces</p>
       </div>
     </div></a>
   </div>
@@ -82,7 +89,27 @@
   </button>
 </div>
 
-<div class="texto">
+<div id="modal-confirmacao-idade" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Confirme sua idade</h5>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Você tem mais de 18 anos?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" id="btnSim">SIM</button>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="btnNao" >NÃO</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="texto" data-aos="fade-in">
   <p>Em Minas Gerais, a doçura e a tradição se entrelaçam em cada pedaço de seus doces e em cada gole de suas cachaças.
     Dos quitutes mais simples aos mais elaborados, os doces mineiros são um convite ao deleite do paladar,
     carregando consigo os sabores da terra e a doçura das tradições familiares.</p>
@@ -91,31 +118,35 @@
 <div class="imagens-mg-index">
   <div class="row">
     <div class="col-lg-4">
-        <img class="img-mg" src="img/mg-1.png">
+        <img class="img-mg" src="img/mg-1.png" data-aos="zoom-in">
       </div>
 
       <div class="col-lg-4">
-        <img class="img-mg" src="img/mg-2.png">
+        <img class="img-mg" src="img/mg-2.png" data-aos="zoom-in">
       </div>
       
       <div class="col-lg-4">
-        <img class="img-mg" src="img/mg-3.png">
+        <img class="img-mg" src="img/mg-3.png" data-aos="zoom-in">
     </div>
 
     </div>
   </div>
-
 
 <footer>
   <p>© 2024 - Todos os direitos reservados</p>
   <p>Projetado por Victor Pereira</p>
 </footer>
 
-</body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous">
 </script>
 
+<script>
+  AOS.init();
+</script>
+
+<script src="javascript.js"></script>
+</body>
 </html>
