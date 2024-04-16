@@ -14,10 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
       
       document.getElementById('btnNao').addEventListener('click', function() {
         // O usuário confirmou que não tem mais de 18 anos.
-        window.location.href = "index.html";
-        modal.style.display = 'none';
         alert("Desculpe, você deve ter pelo menos 18 anos para acessar esta página.");
-
+        window.location.href = "index.html";
       });
 });
 
