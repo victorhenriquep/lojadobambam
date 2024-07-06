@@ -190,6 +190,33 @@ footer p:last-child {
     margin-bottom: 80px;
 }
 
+.card-text {
+    font-weight: 500;
+}
+
+.titulo-servico {
+    color: white;
+    padding-top: 1em;
+}
+
+.texto-servico {
+    color: white;
+}
+
+
+.img-jardinagem {
+    width: 60%;
+    padding-top: 2em;
+}
+
+.linha-servicos {
+
+}
+
+.quadro-texto-servicos {
+    margin-top: 5em;
+}
+
 .modal-title {
     text-align: center;
     width: 100%;
